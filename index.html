@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Import Google Icon Font -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Import materialize.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
+      integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+      crossorigin="anonymous"
+    />
+
+    <!-- Import leaflet.css -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""
+    />
+
+    <!-- Let browser know website is optimized for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Servico de auxilio y remolque de vehiculos y maquinaria localizado en Gobernador Crespo, Santa Fe, Argentina disponible las 24hs"
+    />
+    <title>
+      Auxilio y Remolque Pagano - servicio de auxilio, remolque y grua en
+      Gobernador Crespo, Santa Fe
+    </title>
+  </head>
+
+  <body id="inicio" class="scrollspy">
+    <!-- Navbar -->
+    <div class="navbar-fixed">
+      <nav class="teal">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="#" class="brand-logo">PAGANO</a>
+            <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#servicios">Servicios</a></li>
+              <li><a href="#getThere">Encontranos</a></li>
+              <li><a href="#contacto">Contacto</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#getThere">Encontranos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <!-- Slider -->
+    <section class="slider blue-text">
+      <ul class="slides">
+        <li>
+          <img src="img/grua1.png" alt="slider1" />
+          <div class="caption right-align">
+            <h2>Auxilio en ruta</h2>
+            <h5 class="light grey-text text-lighten-3">
+              <strong
+                >La ayuda va en camino! Servicio de auxilio rapido y
+                eficiente.</strong
+              >
+            </h5>
+            <a href="tel:+54-03498-431574" class="waves-effect waves-light btn">
+              Llamar Ahora
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="img/grua2.png" alt="slider2" />
+          <div class="caption center-align">
+            <h2>Transporte de vehiculos y maquinaria</h2>
+            <h5 class="light grey-text text-lighten-3">
+              Transportamos motos, autos y maquinaria a cualquier punto del
+              país.
+            </h5>
+            <a href="tel:+54-03498-431574" class="waves-effect waves-light btn">
+              Llamar Ahora
+            </a>
+          </div>
+        </li>
+        <li>
+          <img src="img/grua3.png" alt="slider3" />
+          <div class="caption right-align">
+            <h2>Mecánica liviana</h2>
+            <h5 class="light grey-text text-lighten-3">
+              Servicio de mecánica liviana.
+            </h5>
+            <a href="tel:+54-03498-431574" class="waves-effect waves-light btn">
+              Llamar Ahora
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Section search  -->
+    <section
+      id="search"
+      class="section teal white-text center scrollspy"
+      margin="0"
+      padding="0"
+    >
+      <div class="container">
+        <img src="logo.png" margin="0" height="150px" width="100px" />
+      </div>
+    </section>
+
+    <!-- Section Icon Boxes -->
+    <section class="section section-icons grey lighten-4 center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large yellow-text text-darken-1">
+                room
+              </i>
+              <h4>A cualquier punto del país</h4>
+              <p>Hacemos remolques y traslados de vehiculos y maquinaria.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large yellow-text text-darken-1">
+                group
+              </i>
+              <h4>Equipo calificado</h4>
+              <p>Comunicate con nosotros para obtener asesoramiento.</p>
+            </div>
+          </div>
+          <div class="col s12 m4">
+            <div class="card-panel">
+              <i class="material-icons large yellow-text text-darken-1">
+                query_builder
+              </i>
+              <h4>Amplio horario de atención</h4>
+              <p>Para tu comodidad, servicio disponible las 24hs del día</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Servicio -->
+    <section
+      id="servicios"
+      class="section grey lighten-4 section-popular scrollspy"
+    >
+      <div class="container">
+        <div class="row">
+          <h4 class="center">
+            <span class="teal-text">Nuestros Servicios</span>
+          </h4>
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/grua1.png" alt="img1" />
+                <span class="card-title">Servicio de auxilio</span>
+              </div>
+              <div class="card-content">
+                Asegurando el cuidado de su vehiculo en todo el trayecto.
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/grua2.png" alt="img2" />
+                <span class="card-title">Mecánica liviana</span>
+              </div>
+              <div class="card-content">
+                Servicio de mecánica liviana en donde te encuentres.
+              </div>
+            </div>
+          </div>
+
+          <div class="col s12 m4">
+            <div class="card">
+              <div class="card-image">
+                <img src="img/grua3.png" alt="img2" />
+                <span class="card-title">Transporte de vehiculos</span>
+              </div>
+              <div class="card-content">
+                Servicio de traslado de vehiculos, como maquinaria, tractores y
+                motos.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Follow -->
+    <section class="section section-follow white darken-2 teal-text center">
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h4>Seguinos en Nuestras Redes Sociales</h4>
+
+            <a
+              href="https://www.instagram.com/paganoauxilioremolque/"
+              target="_blank"
+              class="teal-text"
+            >
+              <i class="fab fa-instagram fa-4x"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Gallery -->
+    <section
+      id="fotos"
+      class="section section-gallery scrollspy grey lighten-4"
+    >
+      <div class="container">
+        <h4 class="center"><span class="teal-text">Fotos</span></h4>
+        <div class="row">
+          <div class="col s4 m4">
+            <img
+              src="img/grua5.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s4 m4">
+            <img
+              src="img/grua1.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s4 m4">
+            <img
+              src="img/grua3.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua2.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua4.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua6.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua7.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua9.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua10.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua11.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua12.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua13.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua14.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img
+              src="img/grua8.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua15.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua16.png"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img
+              src="img/grua17.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4 m4">
+            <div class="col">
+              <img
+                src="img/gruaNueva (1).jpg"
+                alt="crane"
+                class="materialboxed responsive-img"
+              />
+            </div>
+          </div>
+          <div class="col s4 m4">
+            <div class="col">
+              <img
+                src="img/gruaNueva (2).jpg"
+                alt="crane"
+                class="materialboxed responsive-img"
+              />
+            </div>
+          </div>
+          <div class="col s4 m4">
+            <div class="col">
+              <img
+                src="img/gruaNueva (3).jpg"
+                alt="crane"
+                class="materialboxed responsive-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4 m4">
+            <div class="col">
+              <img
+                src="img/grua20.jpg"
+                alt="crane"
+                class="materialboxed responsive-img"
+              />
+            </div>
+          </div>
+          <div class="col s4 m4">
+            <div class="col">
+              <img
+                src="img/grua21.jpg"
+                alt="crane"
+                class="materialboxed responsive-img"
+              />
+            </div>
+          </div>
+          <div class="col s4 m4">
+            <div class="col">
+              <img
+                src="img/grua22.jpg"
+                alt="crane"
+                class="materialboxed responsive-img"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua23.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua24.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s6 m6">
+            <img
+              src="img/grua25.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+          <div class="col s6 m6">
+            <img
+              src="img/grua26.jpg"
+              alt="crane"
+              class="materialboxed responsive-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How to get there -->
+    <section id="getThere" class="section scrollspy grey lighten-4 center">
+      <h4 class="center"><span class="teal-text">Encontranos</span></h4>
+      <div id="mapid"></div>
+      <a class="waves-effect waves-light btn center" onclick="mapsSelector()"
+        >Como llegar</a
+      >
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contacto"
+      class="section section-contact scrollspy grey lighten-4"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card-panel teal lighten-2 white-text center">
+              <i class="material-icons"> email </i>
+              <h5>Contacto</h5>
+              <p>
+                Atendemos tus dudas y consultas.<br />
+                Comunicate con nosotros por alguno de estos medios y te
+                responderemos a la brevedad.
+              </p>
+            </div>
+            <ul class="collection with-header">
+              <li class="collection-header"><h4>Ubicación</h4></li>
+              <li class="collection-item">Auxilio y Remolque Pagano</li>
+              <li class="collection-item">Moreno 545, Gobrenador Crespo</li>
+              <li class="collection-item">Santa Fe</li>
+            </ul>
+          </div>
+          <div class="col s12 m6">
+            <div class="card-panel grey lighten-3">
+              <ul class="collection with-header grey lighten-3">
+                <li class="collection-header grey lighten-3">
+                  <h5>Comunicate con nosotros</h5>
+                </li>
+                <li class="collection-item grey lighten-3">
+                  Tel: (03498) 431574 <br />
+                  (03498) 401209
+                </li>
+                <li class="collection-item grey lighten-3">
+                  Mail: paganonataliad@hotmail.com
+                </li>
+                <li class="collection-item grey lighten-3">
+                  WhatsApp: (3498) 618296
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <a href="tel:+54-03498-431574" class="waves-effect waves-light btn">
+              Llamar Ahora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="section grey darken-1 white-text center">
+      <p>Desarrollado por Facundo Rotger &copy; 2018</p>
+      <a
+        href="https://www.facebook.com/facundo.rotger"
+        target="_blank"
+        class="white-text"
+      >
+        <i class="fab fa-facebook fa-2x"></i>
+      </a>
+      <a
+        href="https://www.instagram.com/facu_rotger"
+        target="_blank"
+        class="white-text"
+      >
+        <i class="fab fa-instagram fa-2x"></i>
+      </a>
+    </footer>
+
+    <!-- JavaScript at end of body for optimized loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+      integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+      crossorigin=""
+    ></script>
+    <script>
+      // SideNav
+      const sideNav = document.querySelector(".sidenav");
+      M.Sidenav.init(sideNav, {});
+
+      // Slider
+      const slider = document.querySelector(".slider");
+      M.Slider.init(slider, {
+        indicators: false,
+        height: 500,
+        transition: 500,
+        interval: 6000
+      });
+
+      // Material Boxed
+      const mb = document.querySelectorAll(".materialboxed");
+      M.Materialbox.init(mb, {});
+
+      //ScrollSpy
+      const ss = document.querySelectorAll(".scrollspy");
+      M.ScrollSpy.init(ss, {});
+
+      //Show Map
+      var mymap = L.map("mapid").setView([-30.3600868, -60.402998], 15);
+
+      L.tileLayer(
+        "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
+        {
+          attribution:
+            'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+          maxZoom: 18,
+          id: "mapbox.streets",
+          accessToken:
+            "pk.eyJ1IjoiZmFjdXJvdCIsImEiOiJjanF3ZDBzdmoxNHdwNDlrOHgxdGtkYTMwIn0._B0mnawUQW7uXLZ0JPs2Kw"
+        }
+      ).addTo(mymap);
+
+      var marker = L.marker([-30.3600868, -60.402998]).addTo(mymap);
+      marker
+        .bindPopup(
+          "<b>Te esperamos en Moreno 545!</b><br>Auxilio-Remolque Pagano."
+        )
+        .openPopup();
+
+      //Maps function
+      function mapsSelector() {
+        if (
+          /* if we're on iOS, open in Apple Maps */
+          navigator.platform.indexOf("iPhone") != -1 ||
+          navigator.platform.indexOf("iPad") != -1 ||
+          navigator.platform.indexOf("iPod") != -1
+        )
+          window.open(
+            "maps://maps.google.com/maps?daddr=moreno 545 gobernador crespo santa fe argentina&amp;ll="
+          );
+        /* else use Google */ else
+          window.open(
+            `https://maps.google.com/maps/dir/?daddr=moreno 545 gobernador crespo santa fe argentina&amp;ll=`
+          );
+      }
+    </script>
+  </body>
+</html>
